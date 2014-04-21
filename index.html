@@ -1,160 +1,268 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700|Lato:400,400italic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Ariel Kaplan | Conscious Design for Pixel &amp; Print</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="icon.css" >
+    <link rel="shortcut icon" href="img/bookmark.gif">
+    <!-- <link rel="stylesheet" href="http://basehold.it/24"> -->
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+    <!-- Top Bar -->
+    <div class="bg-img" data-interchange="[/img/lav-sm.jpg, (default)], [/img/lav-lg.jpg, (large)]">
+      <header>
+        <div class="contain-to-grid">
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="index.html"><img class="logo" src="img/logo.png">Ariel Kaplan</a></h1>
+              </li>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+              <!--<li class="toggle-topbar menu-icon"><a href=""></a></li>-->
+            </ul>
+            
+            <section class="top-bar-section">
+              <!-- Right side nav -->
+              <ul class="right inline-list">
+                <!-- <li class="icon"><a href="mailto:ariel@arielkaplan.com"><i class="icon-mail"></i></a></li>
+                <li class="icon"><a href="http://www.twitter.com/arieldancing"><i class="icon-twitter4"></i></a></li>
+                <li class="icon"><a href="http://www.linkedin.com/pub/ariel-kaplan/36/57a/488"><i class="icon-linkedin3"></i></a></li>-->
+                <li class="icon"><a href="about.html"><i class="icon-info"></i></a></li>
+                <!--<li class="active"><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Blog</a></li>-->
+              </ul>
+            </section>
+          </nav>
         </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </header>
+      <!-- End Top Bar -->
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
+      <!-- Headline -->
+      <section class="hero">
         <div class="row">
           <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
+            <h1>Conscious design for pixel &amp; print.</h1>
+            <p class="lead">Websites, graphic design, &amp; friendly technology coaching for small businesses and non-profits.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-      </div>
+      </section>
     </div>
+    <!--
+    <section class="who">
+      <div class="row">
+        <div class="large-5 columns panel first">
+          <p><span class="drop">You</span>A small business or non-profit that is passionate about making the world a better place and who wants to improve your presence online.</p>
+        </div>
+        <div class="large-2 columns text-center">
+          <div class="circle">
+            <p>&hearts;</p>
+          </div>
+        </div>
+        <div class="large-5 columns panel last">
+          <p><span class="drop">Me</span>A visual and user-oriented designer who is passionate about making effective, intuitive, and visually-appealing experiences.</p>
+          <p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center large-4 large-centered columns">
+          <a class="button radius" href="services.html">Check out my services</a></p>
+        </div>
+      </div>
+     
+    </section> -->
+
+    <div class="border">
+    </div>
+
+    <!-- End Headline -->
+
+    <!-- Content -->
+
+    <div class="content">
+
+      <div class="row website">
+        <div class="large-12 columns">
+          <div>
+            <h2>Websites</h2>
+            <p class="icon"><i class="icon-screen"></i><i class="icon-tablet2"></i><i class="icon-mobile2"></i></p>
+            <p class="lead">Do you have a smartphone?</p>
+            <p>So do your customers. As of 2013, <a href="http://www.prweb.com/releases/2013/11/prweb11296475.htm">28% of website traffic is from mobile devices</a>, so any modern website worth its salt should be <span data-tooltip class="has-tip" title="Responsive Web Design (RWD) is an approach aimed at creating an optimal viewing experience across a wide range of screen sizes and devices.">responsive</span>.</p>
+            <p><span class="hide-for-small">Resize your browser window right now to see what I mean!</span></p>
+            
+            <h3>WordPress Quickstart</h3>
+            <p class="icon inline"><i class="icon-rocket"></i> &#43; <i class="icon-wordpress"></i></p>
+            <p>Get a quality pre-made <span data-tooltip class="has-tip" title="WordPress is a Content-Management System (CMS) and blogging tool that allows for simple, no-code web publishing.">WordPress</span> theme that fits your needs and goals. Includes minor customization. Smallest investment of time and money.</p>
+
+
+            <h3>Tailored to You</h3>
+            <p class="icon inline"><i class="icon-palette"></i><i class="icon-brush"></i> &#43; <i class="icon-code"></i> &#43; <i class="icon-user2"></i></p>
+            <p>Get a website designed to fit your specific needs and style. Best for those with strong branding goals or specific functionality requirements, but blogging or frequent updates are not a priority.</p>
+            
+            <h3>Tailored WordPress</h3>
+            <p class="icon inline"><i class="icon-palette"></i><i class="icon-brush"></i> &#43; <i class="icon-code"></i> &#43; <i class="icon-user2"></i> &#43; <i class="icon-wordpress"></i></p>
+            <p>Best of both worlds! A custom site, turned into a personalized Wordpress theme. Good for those with more specific branding or functionality requirements, who plan on blogging or making frequent updates.</p>
+
+            <!-- <p class="show-for-small-only"><a class="button secondary radius" data-dropdown="drop-web">SMALL See samples</a></p> -->
+
+            <dl class="accordion" data-accordion>
+              <dd>
+                <a class="button radius secondary" href="#accordion-web">Sample Websites &raquo;</a>
+                <div id="accordion-web" class="content">
+                  <ul class="clearing-thumbs small-block-grid-3 large-block-grid-4" data-clearing>
+                    <li>
+                      <a href="portfolio/webpgs.png" alt="Pioneer Games Studio website design">
+                        <img class="th" data-caption="Pioneer Games Studio" src="thumb/webpgs.jpg" alt="Pioneer Games Studio website design">
+                        <cite>Pioneer Games</cite>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio/webjtd.jpg" alt="Join the Dance WordPress website design">
+                        <img class="th" data-caption="Join the Dance WordPress theme: www.join-the-dance.com" src="thumb/webjtd.png" alt="Join the Dance WordPress website design">
+                        <cite>Join the Dance</cite>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio/webpa-rwd.png" alt="Pattern Agents responsive website design">
+                        <img class="th" data-caption="Pattern Agents Responsive Design: www.patternagents.com" src="thumb/webpa.png" alt="Pattern Agents website design">
+                        <cite>Pattern Agents</cite>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio/webcland.jpg" alt="Carruthers Landscape responsive website design">
+                        <img class="th" data-caption="Carruthers Landscape responsive website design: www.carrutherslandscape.com" src="thumb/webcland.jpg" alt="Carruthers Landscape responsive website design">
+                        <cite>Carruthers Landscape</cite>
+                      </a>
+                    </li>          
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row gd">
+        <div class="large-12 columns">
+
+          <div>
+            <h2>Graphic Design &amp; Branding</h2>
+            <!-- <p class="icon standard"><i class="icon-newspaper2"></i></i><i class="icon-book2"></i><i class="icon-pictures2"></i><i class="icon-docs"></i><i class="icon-map"></i></p> -->
+            <ul class="icon">
+              <li><i class="icon-vcard"></i>Business cards</li>
+              <li><i class="icon-map"></i>Flyers</li>
+              <li><i class="icon-newspaper3"></i>Signs &amp; Posters</li>
+              <li><i class="icon-shield"></i>Logo Design</li>
+              <li><i class="icon-pie"></i>Infographics</li>
+              <li><i class="icon-pictures2"></i>Illustrations</li>
+            </ul>
+
+            <dl class="accordion" data-accordion>
+              <dd>
+                <a class="button radius secondary" href="#accordion-gd">Sample Graphic Design &raquo;</a>
+                <div id="accordion-gd" class="content">
+                  <ul class="clearing-thumbs small-block-grid-3 large-block-grid-4" data-clearing>
+                    <li>
+                      <a href="portfolio/TIPC-redesign.jpg" alt="The International Princess Club business card">
+                        <img class="th" data-caption="The International Princess Club: Business card redesign. Issues taken into consideration: Match existing website design, improve legibility, add clarity to the organization's identity." src="thumb/TIPC-redesign.jpg" alt="The International Princess Club business card redesign.">
+                        <cite>International Princess Club</cite>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="portfolio/pdxux5.png" alt="pdxUX logo redesign">
+                        <img class="th" data-caption="pdxUX logo redesign" src="thumb/pdxux.jpg" alt="pdxUX logo">
+                        <cite>pdxUX logo</cite>
+                      </a>
+                    </li>  
+                    <li>
+                      <a href="portfolio/emzylogo.png" alt="Emzy logo">
+                        <img class="th" data-caption="Emzy restaurant logo" src="thumb/emzylogo.png" alt="Emzy logo">
+                        <cite>Emzy logo</cite>
+                      </a>
+                    </li>     
+                    <li>
+                      <a href="portfolio/jtdlogo.png" alt="Join the Dance logo">
+                        <img class="th" data-caption="Join the Dance logo" src="thumb/jtdlogo.png" alt="Join the Dance logo">
+                        <cite>Join the Dance logo</cite>
+                      </a>
+                    </li>   
+                    <li>
+                      <a href="portfolio/superlogo.png" alt="SuperNatural logo">
+                        <img class="th" data-caption="SuperNatural logo" src="thumb/superlogobw.jpg" alt="SuperNatural logo">
+                        <cite>SuperNatural logo</cite>
+                      </a>
+                    </li>  
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+            
+            <!-- <p class="show-for-small-only"><a class="button secondary radius">SMALL See sample projects</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div>
+            <h2>Coaching</h2> 
+            <!-- <p class="icon standard"><i class="icon-directions"></i></p> -->
+            <p>Have a website but not sure how to use it? How do you make Facebook events? What is Twitter anyway?</p>
+            <p>I'll walk you through the process with simple, straightforward explanations. No jargon.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="cta">
+            <h2>Want to know more?</h2>
+            <!--<p class="icon standard"><i class="icon-light-bulb"></i></p>-->
+            <p>Email me for a free 45-minute introductory meeting, to see if we're a good match.</p>
+            <a href="mailto:ariel@arielkaplan.com" class="button radius alert">Get a free consultation</a>
+            <a href="about.html" class="button radius secondary">Learn more about me</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End Content -->
+
+
+
+    <!-- Footer -->
+    <footer class="contain-to-grid">
+      <div class="row">
+        <div class="large-6 columns">
+          <blockquote><i class="quotes-left"></i>With realization of one's own potential and self-confidence in one's ability, one can build a better world.</blockquote>
+          <cite>&mdash; Dalai Lama</cite> 
+        </div>
+        <div class="large-6 columns">
+          <div class="row">
+            <div class="large-12 columns">
+              <ul class="inline-list">
+                <li class="icon"><a href="mailto:ariel@arielkaplan.com"><i class="icon-mail"></i></a></li>
+                <li class="icon"><a href="http://www.twitter.com/arieldancing"><i class="icon-twitter4"></i></a></li>
+                <li class="icon"><a href="http://www.github.com/kapari"><i class="icon-github"></i></li>
+                <li class="icon"><a href="http://www.linkedin.com/pub/ariel-kaplan/36/57a/488"><i class="icon-linkedin3"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <p><a href="index.html">&copy; 2014 Swallowtail Studio LLC</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

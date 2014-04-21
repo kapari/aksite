@@ -1,0 +1,269 @@
+header {
+	@include linear-gradient(#111, transparent);
+}
+.bg-img {
+	border-bottom: 4px solid #111;
+	padding-bottom: 0;
+}
+
+div.border {
+	height: 35px;
+	background: transparent url("/img/border.png") repeat-x center top;
+	margin-bottom: 1em;
+}
+
+.hero .row {
+	margin: -45px auto 1.5em auto; // go behind top-bar
+	text-align: center;
+	width: 90%;
+	padding-top: 5em; // height of top-bar is 3em
+	// padding-bottom: 0;
+	position: relative;
+	// z-index: -5;
+	h1 {
+		line-height: 1.125;
+		color: #eee;
+	}
+	p {
+		color: #eee;
+	}
+	img {
+		margin: auto;
+		z-index: -1;
+	}
+}
+.circle {
+	border-radius: 50%;
+	background-color: white;
+	position: relative;
+	width: 3.5em;
+	height: 3.5em;
+	margin: -2.75em auto -3em auto;
+	z-index: 1; // stay over panels
+	p {
+		color: $alert-color;
+		font-size: 3em;
+		line-height: 1em;
+	}
+}
+.top-bar { 
+	z-index: 3; // stay over panels & callouts
+	margin-bottom: 1.5em;
+	.title-area .name h1 {
+		// Very specific to override foundation 
+		color: lighten($primary-color, 55%);
+		a {
+			// Show full name on small screen
+			width: 80%; 
+		}
+	}
+	.right.inline-list li {
+		margin-left: 0;
+		margin-top: 0.25em;
+		i {
+			font-size: 1.25em;
+		}
+	}
+}
+.logo {
+	margin: -0.25em 0.5em 0 .75em;
+	height: 1.75em;
+	width: auto;
+}
+.who { 
+	.panel {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		&.first {
+			margin-bottom: 1.5em;
+		}
+		&.last {
+			margin-top: -0.25em;
+		}
+	}
+	p {
+		width: 90%;
+		margin: auto;
+	}
+	.drop {
+		float: left;
+		color: $primary-color;
+		font-size: 2.25em;
+		line-height: 1em;
+		font-family: $header-font-family;
+		margin-right: 0.5em;
+		padding-top: 0.125em;
+	}
+}
+
+img.profile {
+	margin-left: 1em;
+}
+
+h2, h3, h4 {
+	text-align: center;
+}
+
+.accordion {
+	padding-bottom: 1em;
+	width: auto;
+	.button {
+		margin-bottom: 0;		
+	}
+	.content {
+		border-bottom: 1px solid lighten($primary-color, 30%);
+		transition: all ease-in-out 500ms;
+		-o-transition: all ease-in-out 500ms;
+		-moz-transition: all ease-in-out 500ms;
+		-webkit-transition: all ease-in-out 500ms;
+	}
+}
+ul.no-bullet i {
+	margin-right: 1em;
+}
+
+.gd {
+	.icon i {
+		color: $primary-color;
+		border-radius: 50%;
+		font-size: 3em;
+		display: block;
+	}
+	ul.icon {
+		list-style-type: none;
+		margin-top: 2em;
+		li {
+			display: inline-block;
+			width: 45%;
+			text-align: center;
+			margin-bottom: 1.5em;
+		}
+	}	
+}
+.website {
+	.icon {
+		margin-bottom: .5em;
+	}
+}
+
+.row .about ul li {
+	text-align: left;
+}
+
+.button.secondary, .button.alert {
+	width: 100%;
+}
+
+//  Icons
+
+.icon { 
+	text-align: center;
+	.icon-screen {
+		font-size: 5em;
+		margin-right: 0.125em;
+	}
+	.icon-tablet2 {
+		font-size: 3em;
+	}
+	.icon-mobile2 {
+		font-size: 2em;
+	}
+	.icon-brush {
+		margin: auto -0.15em;
+	}
+}
+.icon.standard {
+	font-size: 3em;
+}
+.icon.inline {
+	color: lighten($primary-color, 30%);
+}
+
+footer.contain-to-grid {
+	background-color: $primary-color;
+	color: #fff;
+	text-align: center;
+	padding: 1.5em 0 2em 0;
+	border-top: 4px solid #111;
+	.large-6-columns {
+		padding-bottom: 1.5em;
+	}
+	i {
+		font-size: 1.25em;
+		line-height: 3em;
+		vertical-align: bottom;
+	}
+	a {
+		color: #fff;
+		&:hover {
+			color: lighten($primary-color, 55%);
+		}
+	}
+	ul {
+		display: inline-table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	blockquote {
+		border: none;
+		padding-right: 1.125rem;
+	}
+}
+cite {
+	font-style: italic;
+	line-height: 1em;
+}
+
+// Media queries
+
+@media only screen and (min-width:29.375em) {
+	// 470px 
+	// Even out the hero h1
+	.hero .row {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width:40.063em) {
+	// 641px (medium)
+	h1, h2, h3, h4 {
+		text-align: left;
+	}
+	.icon {
+		text-align: left;
+	}
+	.button.secondary, .button.alert {
+		width: auto;
+	}
+	.top-bar .title-area .name h1 a { 
+		// Very specific to override foundation 
+		// Keep inline on larger screens
+		width: auto; 
+	}
+	.gd ul.icon li {
+		width: 30%;
+	}
+	.accordion {
+		width: auto;
+	}
+	.hero .row {
+		text-align: left;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		h1, .lead {
+			max-width: 70%;
+		}
+	}
+	.content {
+		footer, .row {
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+	}
+}
