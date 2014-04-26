@@ -382,26 +382,26 @@ $accordion-content-active-bg-color: scale-color($primary-color, $lightness: 90%)
 // $include-html-clearing-classes: $include-html-classes;
 
 // We use these to set the background colors for parts of Clearing.
-// $clearing-bg: #333;
-// $clearing-caption-bg: $clearing-bg;
-// $clearing-carousel-bg: rgba (51,51,51,0.8);
+$clearing-bg: rgba(lighten($primary-color, 60%),0.8);
+$clearing-caption-bg: rgba(darken($primary-color, 10%),0.8);
+$clearing-carousel-bg: transparent;
 // $clearing-img-bg: $clearing-bg;
 
 // We use these to style the close button
-// $clearing-close-color: #ccc;
+$clearing-close-color: $primary-color;
 // $clearing-close-size: 30px;
 
 // We use these to style the arrows
-// $clearing-arrow-size: 12px;
+$clearing-arrow-size: 1rem;
 // $clearing-arrow-color: $clearing-close-color;
 
 // We use these to style captions
-// $clearing-caption-font-color: #ccc;
+$clearing-caption-font-color: lighten($primary-color, 60%);
 // $clearing-caption-font-size: 0.875em;
 // $clearing-caption-padding: 10px 30px 20px;
 
 // We use these to make the image and carousel height and style
-// $clearing-active-img-height: 85%;
+$clearing-active-img-height: 85%;
 // $clearing-carousel-height: 120px;
 // $clearing-carousel-thumb-width: 120px;
 // $clearing-carousel-thumb-active-border: 1px solid rgb(255,255,255);

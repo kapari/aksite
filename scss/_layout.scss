@@ -247,6 +247,19 @@ cite {
 	h1, h2, h3, h4 {
 		text-align: left;
 	}
+	.content .clearing-assembled .clearing-container .carousel {
+		// Overly specific to override foundation
+		// Blends carousel bg with caption bg
+		background: rgba(darken($primary-color, 10%),0.8);
+		margin-top: 0px;
+		padding-top: 10px;
+	}
+	.clearing-assembled .clearing-container .visible-img {
+		background-color: transparent;
+		img {
+			padding: 0.5em;
+		}
+	}
 	.icon {
 		text-align: left;
 	}
