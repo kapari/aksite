@@ -32,20 +32,7 @@ div.border {
 		z-index: -1;
 	}
 }
-.circle {
-	border-radius: 50%;
-	background-color: white;
-	position: relative;
-	width: 3.5em;
-	height: 3.5em;
-	margin: -2.75em auto -3em auto;
-	z-index: 1; // stay over panels
-	p {
-		color: $alert-color;
-		font-size: 3em;
-		line-height: 1em;
-	}
-}
+
 .top-bar { 
 	z-index: 3; // stay over panels & callouts
 	margin-bottom: 1.5em;
@@ -121,6 +108,11 @@ img.profile {
 	margin-left: 1em;
 }
 
+img.th {
+	//border: 3px solid #333;	
+	padding: 0px;
+}
+
 h2, h3, h4 {
 	text-align: center;
 }
@@ -144,6 +136,9 @@ ul.no-bullet i {
 }
 
 .gd {
+	h2 {
+		margin-bottom: 0.75em;
+	}
 	.icon i {
 		color: $primary-color;
 		border-radius: 50%;
