@@ -142,15 +142,15 @@ $header-font-color: #333; // darken($primary-color, 10%);
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
+$h2-font-size: rem-calc(32); // rem-calc(37);
+$h3-font-size: rem-calc(24); // rem-calc(27);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
-// $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-color: scale-color($header-font-color, $lightness: 20%);
 // $subheader-font-weight: 300;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
@@ -197,11 +197,11 @@ $header-font-color: #333; // darken($primary-color, 10%);
 // $definition-list-margin-bottom: rem-calc(12);
 
 // We use these to style blockquotes
-$blockquote-font-color: scale-color($header-font-color, $lightness: 55%);
+$blockquote-font-color: scale-color($header-font-color, $lightness: 65%);
 // $blockquote-padding: rem-calc(9 20 0 19);
 // $blockquote-border: 1px solid #ddd;
 // $blockquote-cite-font-size: rem-calc(13);
-// $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
+$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 55%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
