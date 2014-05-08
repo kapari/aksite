@@ -225,12 +225,15 @@ footer.contain-to-grid {
 	blockquote {
 		border: none;
 		padding-right: 1.125rem;
+		padding-bottom: 1.25rem;
 		margin: 0 auto;
+		font-family: $header-font-family;
 	}
 }
 cite {
 	font-style: italic;
 	line-height: 1.25em;
+	padding-top: 0.5em;
 }
 
 // Media queries
@@ -267,7 +270,7 @@ cite {
 		text-align: left;
 	}
 	blockquote {
-		max-width: 65%;
+		max-width: 60%;
 	}
 	.button.secondary, .button.alert {
 		width: auto;
@@ -299,5 +302,12 @@ cite {
 			margin-right: auto;
 			text-align: left;
 		}
+	}
+}
+
+@media only screen and (min-width:64.063em) {
+	// large screens
+	blockquote {
+		max-width: 100%;
 	}
 }
